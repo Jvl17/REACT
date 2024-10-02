@@ -1,0 +1,136 @@
+:root {
+    --color1: #5a193d;
+    --color2: #78203f;
+    --color3: #a33142;
+    --color4: #da5142;
+    --color5: #ff843a;
+  }
+
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+.App {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10%;
+}
+
+.tabelas {
+    width: 80%;
+    display: flex;
+    justify-content: left;
+    margin-top: 0%;
+}
+
+.standings {
+    width: 30%;
+    max-height: 125vh;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+table {
+    width: 90%;
+    text-align: left;
+    margin-top: 20%;
+}
+
+table thead tr th {
+    font-size: 1.2rem;
+}
+
+table tbody tr,
+table tbody tr td {
+    font-size: 1.1rem;
+}
+
+.h2Margin {
+    width: 100%;
+    min-height: 8vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 0;
+    height: 8vh;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.h2Margin span {
+    margin-left: 5%;
+}
+
+.matches {
+    margin-left: 5%;
+    width: 80%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;  
+}
+
+.matches h2 {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 0;
+    height: 8vh;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.matches h2 span {
+    margin-left: 10%;
+}
+
+.partidas {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 5%;
+    padding-bottom: 5%;
+}
+
+.navegacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+    margin-top: 2%;
+}
+
+.navigation {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation button {
+    background-color: var(--color3);
+    border: none;
+    outline: none;
+    height: 4vh;
+    width: 35%;
+    border-radius: 3px;
+    color: white;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.navigation button:hover {
+    background-color: var(--color4);
+}
+
+.navigation span {
+    font-size: 1.2rem;
+}

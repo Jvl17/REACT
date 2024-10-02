@@ -1,0 +1,30 @@
+:root {
+    --color1: #5a193d;
+    --color2: #78203f;
+    --color3: #a33142;
+    --color4: #da5142;
+    --color5: #ff843a;
+  }
+
+.match-card {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    width: 24%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.data {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.times {
+    font-size: 1.05rem;
+}
+
+.local {
+    font-size: 1.05rem;
+    color: var(--color3);
+    font-weight: 600;
+}

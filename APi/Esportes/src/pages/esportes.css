@@ -1,0 +1,198 @@
+:root {
+    --color1: #5a193d;
+    --color2: #78203f;
+    --color3: #a33142;
+    --color4: #da5142;
+    --color5: #ff843a;
+}
+
+main {
+    background-color: rgb(19, 19, 19);
+    height: 200vh;
+}
+
+.esporteContainer {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+}
+
+.esporteContainer div:hover {
+    z-index: 10;
+}
+
+.esporte1 {
+    width: 30%;
+    height: 80vh;
+    background-image: url(src/assets/esporte1.png);
+    background-size: cover;
+    transition: .6s;
+}
+
+.esporte1:hover {
+    width: 72%;
+}
+
+.sombra {
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(2px);
+    width: 100%;
+    height: 80vh;
+}
+
+.textoEsportes {
+    color: white;
+    z-index: 99;
+    position: absolute;
+    top: 0;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    margin-left: 30%;
+    transition: .3s;
+    flex-direction: column;
+    width: 60%;
+}
+
+.textoEsportes1 {
+    color: white;
+    z-index: 99;
+    position: absolute;
+    top: 0;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    margin-left: 6.5%;
+    transition: .3s;
+    flex-direction: column;
+    width: 25%;
+}
+
+.textoEsportes h1 {
+    line-height: 2rem;
+    font-size: 3rem;
+    transition: .3s ;
+}
+
+.textoEsportes1 h1 {
+    line-height: 2rem;
+    font-size: 3rem;
+    transition: .3s;
+}
+
+.btnVerMais {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: var(--color4);
+    width: 60%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.btnVerMaisGolf {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: var(--color4);
+    width: 135%;
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.textoEsportes1 .btnVerMais {
+    width: 50%;
+}
+
+.esporteContainer div:hover .textoEsportes h1 {
+    font-size: 4rem;
+}
+
+.esporteContainer div:hover .textoEsportes1 h1 {
+    font-size: 4rem;
+}
+
+.esporteContainer div:hover .textoEsportes1 .btnVerMais {
+    width: 75%;
+}
+
+.esporteContainer div:hover .btnVerMais {
+    height: 6vh;
+    font-size: 1.3rem;
+}
+
+.esporteContainer div:hover .btnVerMaisGolf {
+    height: 6vh;
+    font-size: 1.3rem;
+}
+
+.esporteContainer div:hover .textoEsportes {
+    margin-left: 15%;
+}
+
+.esporte2 {
+    width: 35%;
+    height: 80vh;
+    background-image: url(src/assets/esporte2.png);
+    background-size: cover;
+    transition: .6s;
+}
+
+.esporte2:hover {
+    width: 72%;
+}
+
+.esporte3 {
+    width: 35%;
+    height: 80vh;
+    background-image: url(src/assets/esporte3.png);
+    background-size: cover;
+    transition: .6s;
+}
+
+.esporte3:hover {
+    width: 72%;
+}
+
+.navNoticiasEsporte {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.navNoticiasEsporte nav div {
+    display: flex;
+    flex-direction: column;
+}
+
+.navNoticiasEsporte nav div h1 {
+    font-size: 4rem;
+    color: white;
+}
+
+.navNoticiasEsporte nav div h1::before {
+    content: "";
+    position: absolute;
+    background-color: var(--color4);
+    width: 12%;
+    height: 0.6vh;
+    margin-top: 5%;
+}
+
+.navNoticiasEsporte nav div span {
+    font-size: 1.3rem;
+    width: 50%;
+    color: white;
+}

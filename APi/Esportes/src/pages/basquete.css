@@ -1,0 +1,77 @@
+:root {
+    --color1: #5a193d;
+    --color2: #78203f;
+    --color3: #a33142;
+    --color4: #da5142;
+    --color5: #ff843a;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+.App h1 {
+    margin-top: 3%;
+}
+
+.App button {
+    background-color: var(--color3);
+    color: white;
+    border: none;
+    outline: none;
+    transition: .3s;
+    width: 10%;
+    height: 5vh;
+    font-size: 1rem;
+    border-radius: 3px;
+}
+
+.App button:hover {
+    background-color: var(--color4);
+    cursor: pointer;
+}
+
+.navtable {
+    width: 90%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-top: 4%;
+}
+
+.navtable h2 {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin: 0;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+}
+
+.navtable h2 span {
+    margin-left: 3%;
+}
+
+table {
+    margin: 0;
+    margin-top: 3%;
+    margin-left: 3%;
+    padding-bottom: 5%;
+}
+
+table thead tr th {
+    font-size: 1.3rem;
+}
+
+.date {
+    color: var(--color4);
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+table tbody tr {
+    height: 4vh;
+}
+
+.timesNBA {
+    width: 60%;
+}

@@ -1,0 +1,737 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --color1: #5a193d;
+  --color2: #78203f;
+  --color3: #a33142;
+  --color4: #da5142;
+  --color5: #ff843a;
+}
+
+body {
+  margin: 0;
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+  width: 100%;
+  height: 9vh;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  z-index: 99;
+  position: absolute;
+  top: 0;
+}
+
+header img {
+  width: 10%;
+}
+
+.ul_header {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 13%;
+}
+
+.ul_header Link {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: flex;
+}
+
+.ul_header li span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.link span {
+  font-size: 1.1rem;
+  margin-left: 2%;
+}
+
+.ul_header li span svg {
+  width: 35px;
+  margin: 5%;
+}
+
+.ul_backdrop {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  width: 9%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: white;
+  margin-top: 3.25%;
+  height: 0vh;
+  overflow: hidden;
+  transition: .3s;
+  z-index: 1;
+}
+
+.ul_backdrop a {
+  text-decoration: none;
+  color: black;
+}
+.ul_backdrop::before {
+  content: "";
+  position: absolute;
+  background-color: var(--color5);
+  width: 100%;
+  height: 0.3vh;
+  left: 0;
+}
+
+.ul_backdrop li {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 5vh;
+  transition: .3s;
+}
+
+.ul_backdrop li span {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-left: 16.5%;
+}
+
+.liEsportes {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.liEsportes:hover .ul_backdrop {
+  height: 15vh;
+}
+
+.ul_header li span svg {
+  transition: .3s;
+}
+
+.ul_header li span a {
+  transition: .3s;
+}
+
+.ul_header li:hover span svg {
+  fill: var(--color5);
+}
+
+.ul_header li:hover span a {
+  color: var(--color5);
+}
+
+.ul_backdrop li:hover {
+  background-color: rgb(241, 241, 241);
+}
+
+.banner {
+  width: 100%;
+  height: 80vh;
+  background-image: url('./assets/banner.png');
+  backdrop-filter: blur(0px);
+  background-position: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(7px);
+  z-index: -1;
+}
+
+.infos {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 7vh;
+}
+
+.banner h1 span {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.banner a {
+  background-color: var(--color4);
+  width: 40%;
+  height: 7vh;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  transition: .3s;
+}
+
+.banner a:hover {
+  background-color: var(--color5);
+}
+
+.banner::after {
+  content: "";
+  position: absolute;
+  background-color: var(--color4);
+  width: 100%;
+  height: 0.1vh;
+  bottom: 0;
+}
+
+.principaisJogos {
+  width: 100%;
+  height: 300vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.containerJogos {
+  width: 70%;
+  height: 40vh;
+}
+
+.tituloJogos {
+  font-size: 3rem;
+}
+
+.tituloJogos::before {
+  content: "";
+  background-color: var(--color5);
+  width: 19%;
+  height: 0.4vh;
+  position: absolute;
+  margin-top: 4%;
+}
+
+.jogos {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.jogos div {
+  width: 30%;
+  height: 45vh;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.jogos div img {
+  width: 70%;
+}
+
+.jogos div h1 {
+  font-size: 1.5rem;
+  width: 80%;
+  text-align: left;
+  line-height: 3vh;
+}
+
+.jogos div h1 span {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.jogos div a {
+  font-size: 1rem;
+  width: 80%;
+  height: 5vh;
+  background-color: var(--color4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: .3s;
+}
+
+.jogos div a:hover {
+  background-color: var(--color5);
+}
+
+.noticias {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10%;
+}
+
+.nav_noticias {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.tituloNoticias {
+  font-size: 3rem;
+}
+
+.tituloNoticias::before {
+  content: "";
+  background-color: var(--color5);
+  width: 19%;
+  height: 0.4vh;
+  position: absolute;
+  margin-top: 4%;
+}
+
+.nav_noticias div img {
+  width: 80%;
+}
+
+.div_org h1 {
+  font-weight: 400;
+}
+
+.div_org {
+  width: 100%;
+  height: 30vh;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div_infos {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.div_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div_org h1 {
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.div_org span {
+  font-weight: bold;
+  font-size: 1.2rem;
+  width: 95%;
+}
+
+.div_org a {
+  background-color: var(--color4);
+  width: 25%;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: 3%;
+}
+
+.planos {
+  width: 100%;
+  height: 188vh;
+  background-image: url('./assets/banner_planos.png');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav_planos {
+  width: 65%;
+  height: 65vh;
+  margin-top: -20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.div_planos1 {
+  height: 57vh;
+  background-color: rgb(19, 19, 19);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  width: 32%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.div_planos2 {
+  height: 68vh;
+  margin-top: 15%;
+  background-color: rgb(19, 19, 19);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  width: 32%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.div_planos2 .btn_comecar {
+  background-color: var(--color5);
+  color: black;
+  transition: .3s;
+}
+
+.div_planos2 .btn_comecar:hover {
+  background-color: var(--color4);
+  border-color: var(--color4);
+}
+
+.div_planos3 {
+  height: 65vh;
+  margin-top: -8%;
+  background-color: rgb(19, 19, 19);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  width: 32%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.nav_planos div h1 {
+  text-align: center;
+  font-size: 1.7rem;
+  color: white;
+}
+
+.nav_planos div h1 span {
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: rgb(182, 182, 182);
+}
+
+.nav_planos div div {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 81%;
+  margin-top: 4%;
+}
+
+.nav_planos div div svg {
+  fill: var(--color5);
+  width: 35px;
+}
+
+.nav_planos div div span {
+  color: white;
+  font-weight: 400;
+  font-size: 0.9rem;
+  margin-left: 2%;
+  width: 99%;
+}
+
+.nav_planos div h1 h2 {
+  color: gold;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.btn_comecar {
+  width: 75%;
+  height: 4vh;
+  font-size: 0.85rem;
+  text-decoration: none;
+  color: var(--color5);
+  border: solid 0.35vh var(--color5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.btn_pular {
+  text-decoration: none;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-top: 5%;
+}
+
+.spanTexto {
+  font-size: 1rem;
+  width: 79.5%;
+  color: white;
+  font-weight: 400;
+  margin-top: 5%;
+}
+
+.mais {
+  color: white;
+  font-size: 0.8rem;
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mais::before {
+  content: "";
+  position: absolute;
+  background-color: rgb(233, 233, 233);
+  width: 7%;
+  height: 0.2vh;
+  margin-left: -9.5%;
+}
+
+.mais::after {
+  content: "";
+  position: absolute;
+  background-color: rgb(233, 233, 233);
+  width: 7%;
+  height: 0.2vh;
+  margin-left: 9.5%;
+}
+
+.coroa {
+  position: absolute;
+  width: 6%;
+  margin-top: -37%;
+  margin-left: -18%;
+  rotate: -20deg;
+}
+
+.footer {
+  background-color: rgb(19, 19, 19);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10%;
+}
+
+.containerFooter {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.offline {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.offline div img {
+  width: 100%;
+}
+
+.offline div svg {
+  fill: white;
+  rotate: 30deg;
+}
+
+.offline div h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.offline div h1 span {
+  margin-left: 5%;
+}
+
+.descOffline {
+  font-size: 1.3rem;
+  color: white;
+  font-weight: 400;
+}
+
+.descOffline a {
+  color: var(--color5);
+  text-decoration: none;
+}
+
+.propagandas {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20%;
+}
+
+.propagandas div img {
+  width: 80%;
+}
+
+.tituloPropaganda {
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.tituloPropaganda svg {
+  fill: white;
+}
+
+.tituloPropaganda span {
+  margin-left: 3%;
+  color: white;
+}
+
+.descPropaganda {
+  font-size: 1.3rem;
+  color: white;
+  font-weight: 400;
+}
+
+.descPropaganda a {
+  color: var(--color5);
+  text-decoration: none;
+}
+
+.div_propaganda {
+  width: 50%;
+}
+
+.img_propaganda {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cesta {
+  position: absolute;
+  left: 0;
+  margin-top: -30%;
+  width: 25%;
+}
+
+footer {
+  width: 100%;
+  height: 15vh;
+  background-color: rgb(19, 19, 19);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer h1 {
+  color: rgb(185, 185, 185);
+  font-size: 1.3rem;
+  font-weight: 300;
+  margin-top: 2%;
+}
+
+footer h1 span {
+  color: var(--color5);
+}
+
+@media (max-width: 1680px) {
+  .ul_header {
+    width: 33%;
+  }
+
+  .ul_backdrop {
+    margin-top: 3.75%;
+  }
+
+  .ul_header li span svg {
+    width: 30px;
+  }
+
+  .banner {
+    background-image: url('./assets/banner 1680px.png');
+    height: 76vh;
+  }
+
+  .overlay {
+    z-index: -99;
+  }
+
+  .tituloJogos::before {
+    width: 21%;
+  }
+
+  .tituloNoticias::before {
+    width: 21%;
+  }
+
+  .planos {
+    background-image: url('./assets/banner_planos 1680px.png');
+  }
+
+  .footer {
+    margin-top: -1%;
+  }
+
+  .div_planos2 {
+    margin-top: 20%;
+  }
+
+  .coroa {
+    margin-top: -44%;
+  }
+
+  .btn_comecar {
+    width: 80%;
+  }
+
+  .jogos div {
+    height: 42vh;
+  }
+}

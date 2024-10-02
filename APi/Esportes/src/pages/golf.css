@@ -1,0 +1,97 @@
+:root {
+    --color1: #5a193d;
+    --color2: #78203f;
+    --color3: #a33142;
+    --color4: #da5142;
+    --color5: #ff843a;
+}
+
+.navGolf {
+    margin-top: 10%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tabela {
+    width: 90%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 5px;
+}
+
+.tabela h1 {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin: 0;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+}
+
+.tabela h1 span {
+    margin-left: 3%;
+}
+
+.divTable {
+    height: 30vh;
+    overflow-y: auto;
+    overflow-x: scroll;
+    margin-top: 2%;
+}
+
+table {
+    outline: none;
+    border-collapse: collapse;
+}
+
+.match {
+    margin-top: 5%;
+    width: 90%;
+    height: 15vh;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.match h2 {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin: 0;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add {
+    display: flex;
+    height: 7vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputs {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inputs input {
+    height: 3vh;
+    padding-left: 10px;
+    font-size: 1rem;
+}
+
+.inputs button {
+    height: 3.6vh;
+    width: 10%;
+    background-color: var(--color3);
+    color: white;
+    border: none;
+    outline: none;
+    transition: .3s;
+    border-radius: 3px;
+}
+
+.inputs button:hover {
+    background-color: var(--color4);
+    cursor: pointer;
+}

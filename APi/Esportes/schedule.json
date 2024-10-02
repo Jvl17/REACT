@@ -1,0 +1,19 @@
+{
+    "schedule": [
+        {"homeTeamId": 1, "awayTeamId": 2, "homeScore": null, "awayScore": null, "date": "2024-07-01", "location": "State Farm Arena, Atlanta"},
+        {"homeTeamId": 3, "awayTeamId": 4, "homeScore": null, "awayScore": null, "date": "2024-07-01", "location": "Barclays Center, Brooklyn"},
+        {"homeTeamId": 5, "awayTeamId": 6, "homeScore": null, "awayScore": null, "date": "2024-07-02", "location": "United Center, Chicago"},
+        {"homeTeamId": 7, "awayTeamId": 8, "homeScore": null, "awayScore": null, "date": "2024-07-02", "location": "American Airlines Center, Dallas"},
+        {"homeTeamId": 9, "awayTeamId": 10, "homeScore": null, "awayScore": null, "date": "2024-07-03", "location": "Little Caesars Arena, Detroit"},
+        {"homeTeamId": 11, "awayTeamId": 12, "homeScore": null, "awayScore": null, "date": "2024-07-03", "location": "Toyota Center, Houston"},
+        {"homeTeamId": 13, "awayTeamId": 14, "homeScore": null, "awayScore": null, "date": "2024-07-04", "location": "Staples Center, Los Angeles"},
+        {"homeTeamId": 15, "awayTeamId": 16, "homeScore": null, "awayScore": null, "date": "2024-07-04", "location": "FedExForum, Memphis"},
+        {"homeTeamId": 17, "awayTeamId": 18, "homeScore": null, "awayScore": null, "date": "2024-07-05", "location": "Fiserv Forum, Milwaukee"},
+        {"homeTeamId": 19, "awayTeamId": 20, "homeScore": null, "awayScore": null, "date": "2024-07-05", "location": "Smoothie King Center, New Orleans"},
+        {"homeTeamId": 21, "awayTeamId": 22, "homeScore": null, "awayScore": null, "date": "2024-07-06", "location": "Chesapeake Energy Arena, Oklahoma City"},
+        {"homeTeamId": 23, "awayTeamId": 24, "homeScore": null, "awayScore": null, "date": "2024-07-06", "location": "Wells Fargo Center, Philadelphia"},
+        {"homeTeamId": 25, "awayTeamId": 26, "homeScore": null, "awayScore": null, "date": "2024-07-07", "location": "Moda Center, Portland"},
+        {"homeTeamId": 27, "awayTeamId": 28, "homeScore": null, "awayScore": null, "date": "2024-07-07", "location": "AT&T Center, San Antonio"},
+        {"homeTeamId": 29, "awayTeamId": 30, "homeScore": null, "awayScore": null, "date": "2024-07-08", "location": "Vivint Arena, Salt Lake City"}
+    ]
+}
